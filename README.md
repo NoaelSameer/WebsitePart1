@@ -15,3 +15,6 @@ There is also a iframe, of a youtube video.
 The contact us slide is pretty ordinary, with not much visual appeals, because it isn't suppose to be distracting. 
 
 I did not have enough time to create the Donate slide, so I linked it to teamseas.
+
+FIGMA
+https://www.figma.com/file/lDf9nFJVTD6HOfqujNtGeD/Home?type=design&node-id=0%3A1&mode=design&t=F1tIY7vd4s4jFlZd-1
