@@ -1,0 +1,180 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+/* Makes everything connected much more fluently */
+body{
+    background-image: url("./images/shutterstock_101279995.jpg");
+    height: 100vh;
+    background-size: cover;
+/* Adds a  background, makes it not repeat (height)*/
+}
+.Nav{
+    background-color: lightBlue;
+    min-width:100vw;
+}
+/* This makes sure all of the website is covered width wise by Light Blue */
+
+
+.Nav label a{
+    text-decoration:none;
+    color: white;
+    font-size: 4vh;
+    line-height: 80px;
+    padding-left: 100px;
+}
+.Nav label a:hover{
+    color:black;
+    transition: .5s;
+}
+.Nav ul{
+    float: right;
+    margin-right: 20px;
+}
+.Nav ul li{
+    display: inline-block;
+    /* This helps put them in order */
+    line-height: 40px;
+    margin-left: 50px;
+    font-size:1.5vw;
+    padding-right: 20px;
+}
+.Nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+.Nav ul li a:hover{
+    color: black;
+    transition: .5s;
+}
+
+.Info{
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    text-align: center;
+    color:white;
+    font-size: 2vw;
+    transition: 1s;
+}
+button{
+    text-align: center;
+    padding: 1vw 2vw;
+    background-color: transparent;
+    color: white;
+    border: white solid 1px;
+    font-size: 1vw;
+    border-radius: 25px;
+    transition: 1s;
+
+  }
+  button:hover{
+    background: linear-gradient(to left, lightblue 50%, white 25%) right;
+    background-size: 20% 100%;
+    /* Filter is applied from left to right, starts with color blue at 50%, and transitions to white at 25%
+    right-Starts it from right side */
+    /* The width is 10% of box, 50 percent is the height */
+    color:black;
+    transition-duration: 1.5s;
+    cursor: pointer;
+    font-size: 90%;
+  }
+button:active{
+    /* background: linear-gradient(to left, white 50%, lightblue 25%) right;
+    background-size: 100% 200%; */
+    background-image: url("/Website1/images/Logo.png");
+    color:transparent;
+    background-size: 50%;
+    transition-duration: 1s;
+    cursor: pointer;
+  }
+  .Info p{ 
+    background: linear-gradient(to left, lightblue 50%, white 25%) right;
+    background-size: 20% 200%;
+    transition-duration: 2s;
+    font-size: 100%;
+    -webkit-text-fill-color: transparent; 
+    -webkit-background-clip: text;
+    /* The color is transpart, and the background gets filled up with the linear gradient */
+} 
+  .Info p:hover{ 
+    background: linear-gradient(to left, lightblue 50%, white 25%) right;
+    background-size: 20% 200%;
+    transition-duration: 2s;
+    font-size: 120%;
+    -webkit-text-fill-color: transparent; 
+    -webkit-background-clip: text;
+}
+.Gallery{
+    display: grid;
+    grid-template-columns: 10vw 80vw 15vw;
+    grid-template-rows: 130vw 90vw 120vw 100vw;
+    background-color: #0FB7CB;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23168098' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%2350d6d7' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%23147c94' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%2345cecc' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%23137890' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%233bc5c0' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%2311738c' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%232fbdb5' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%230f6f88' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%2323b4aa' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%230e6b84' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%2315ac9f' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    min-width: 100vw;
+    color:white;
+}
+.Gallery h1{
+    font-size: 3vw;
+}
+.Gallery h2{
+    font-size: 2vw;
+}
+.Gallery ul{
+    font-size: 1.5vw;
+}
+.Gallery p{
+    font-size: 1.75vw;
+}
+.AboutUs {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.Facts{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.Action{
+    grid-column: 2/3;
+    grid-row: 3/4;
+
+}
+.Images{
+    grid-column: 2/3;
+    grid-row: 4/5;
+    max-width: 50vw;
+    margin: 0 auto;
+    /* Sets top and bottom to 0, and left and right to auto */
+}
+.slideshow{
+    display:flex;
+    overflow-x: auto;
+    /* Adds that scroll bar effect */
+    max-height:40vw;
+    min-width:50vw;
+    object-fit: cover;
+}
+iframe{
+    height: 30vw;
+    width: 50vw;
+}
+
+.Contact{
+    display:grid;
+    grid-template-columns: 20vw 60vw 20vw;
+    grid-template-rows: auto;
+    width: 100vw;
+    min-height: 100vh;
+    background-color: lightBlue;
+
+}
+.Form{
+    grid-column:2/3;
+    grid-row: 1/2;
+    background-color: lightgray;
+    padding: 50px 50px 50px 50px;
+    border-radius: 25px;
+
+}
